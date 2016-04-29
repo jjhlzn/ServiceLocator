@@ -21,7 +21,7 @@ worker_processes 5
  
 # Help ensure your application will always spawn in the symlinked
 # "current" directory that Capistrano sets up.
-working_directory "/home/jjh/audioServer" # available in 0.94.0+ 在这里修改为项目所在目录
+working_directory "/home/jjh/ServiceLocator" # available in 0.94.0+ 在这里修改为项目所在目录
  
 # listen on both a Unix domain socket and a TCP port,
 # we use a shorter backlog for quicker failover when busy
@@ -32,7 +32,7 @@ listen 19640, :tcp_nopush => true         #端口号，NginX需要用到此端口号
 timeout 120
  
 # feel free to point this anywhere accessible on the filesystem
-pid "/home/jjh/audioServer/unicorn.pid"    #pid文件的位置，可以自己设置，注意权限
+pid "/home/jjh/ServiceLocator/unicorn.pid"    #pid文件的位置，可以自己设置，注意权限
  
 # By default, the Unicorn logger will write to stderr.
 # Additionally, ome applications/frameworks log to stderr or stdout,
