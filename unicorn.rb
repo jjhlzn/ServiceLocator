@@ -25,8 +25,8 @@ working_directory "/home/jjh/ServiceLocator" # available in 0.94.0+ 在这里修改为
  
 # listen on both a Unix domain socket and a TCP port,
 # we use a shorter backlog for quicker failover when busy
-listen "/var/tmp/.unicorn2.sock", :backlog => 64
-listen 19640, :tcp_nopush => true         #端口号，NginX需要用到此端口号
+listen "/var/tmp/.unicorn3.sock", :backlog => 64
+listen 19740, :tcp_nopush => true         #端口号，NginX需要用到此端口号
  
 # nuke workers after 30 seconds instead of 60 seconds (the default)
 timeout 120
