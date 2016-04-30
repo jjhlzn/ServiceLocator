@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   
   get 'servicelocator' => 'servicelocator#index'
+  post 'servicelocator' => 'servicelocator#index'
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
