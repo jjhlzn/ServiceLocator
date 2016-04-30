@@ -4,7 +4,7 @@ class ServicelocatorController < ApplicationController
     app = params[:app]
   
     if app == "huayuan_contract"
-      render json: {status: 0, errorMessage: '', result: {http: 'http', serverName: 'jjhtest.hengdianworld.com', port: 80}} 
+      render json: {status: 0, errorMessage: '', result: {http: 'http', serverName: 'www.jinjunhang.com', port: 3000}} 
       return
     end
   
