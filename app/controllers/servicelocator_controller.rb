@@ -13,7 +13,13 @@ class ServicelocatorController < ApplicationController
         return
       end
     elsif app == "huayuan_contract_android"
-      render json: {status: 0, errorMessage: '', result: {http: 'http', serverName: 'jjhtest.hengdianworld.com', port: 80}} 
+      if version == "1.0"
+        render json: {status: 0, errorMessage: '', result: {http: 'http', serverName: 'jjhtest.hengdianworld.com', port: 80}} 
+      elsif version == "1.0.2"
+        render json: {status: 0, errorMessage: '', result: {http: 'http', serverName: 'jjhtest.hengdianworld.com', port: 80}}
+      else
+        render json: {status: 0, errorMessage: '', result: {http: 'http', serverName: 'jjhtest.hengdianworld.com', port: 80}}
+      end 
       return
     end
   
