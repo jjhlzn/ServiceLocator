@@ -6,7 +6,7 @@ class ServicelocatorController < ApplicationController
   
     if app == "huayuan_contract"
       if version == "1.0.2-2" 
-        render json: {status: 0, errorMessage: '', result: {http: 'http', serverName: 'jjhtest.hengdianworld.com', port: 80}} 
+        render json: {status: 0, errorMessage: '', result: {http: 'https', serverName: 'oa.lloydind.com', port: 10443}}  
         return
       else
         render json: {status: 0, errorMessage: '', result: {http: 'https', serverName: 'oa.lloydind.com', port: 10443}} 
