@@ -5,7 +5,7 @@ class ServicelocatorController < ApplicationController
     platform = params[:client][:platform]
     Rails.logger.debug {platform}
 
-    render json: {status: 0, errorMessage: '', result: {http: 'http', serverName: '114.215.236.171', port: 6012}}
+    render json: {status: 0, errorMessage: '', result: {http: 'http', serverName: '127.0.0.1', port: 3000}}
     
   end
 end
