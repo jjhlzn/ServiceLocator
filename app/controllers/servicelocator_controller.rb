@@ -6,7 +6,7 @@ class ServicelocatorController < ApplicationController
     version = params[:client][:appversion]
     Rails.logger.debug {platform}
 
-    if platform == 'iphone' && version == '1.0.1.45'
+    if platform == 'iphone' && version == '1.0.1.46'
       render json: {status: 0, errorMessage: '', result: {http: 'http', serverName: 'jf.jinjunhang.com', port: 80}}
       return
     end
